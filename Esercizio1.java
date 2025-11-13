@@ -1,7 +1,12 @@
 import java.util.Scanner;
-class Esercizio1 {
+class Esercizio1{
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("ciao" );
+        Scanner input = new Scanner(System.in);
+        String nome;
+        System.out.println("Inserisci il nome: ");
+        
+        nome= input.nextLine();
+        System.out.println("ciao"+ nome);
+        input.close();
     }
 }
